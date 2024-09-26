@@ -144,10 +144,3 @@ const modifiedObject1 = modifyOriginalObject(object1[0]);
 console.log(modifiedObject1);
 
 //=======================================================
-console.log('-----------Part 4-----------');
-
-
-console.log('----------Part 5-a----------');
-console.log('----------Part 5-b----------');
-console.log('----------Part 5-c----------');
-console.log('----------Part 5-d----------');
