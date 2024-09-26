@@ -103,11 +103,52 @@ console.log(`Sum of Ages is, ${sumAge}`)
 const averageAge = sumAge / youngerPeople.length;
 
 console.log(`The average age is ${averageAge.toFixed(0)}`);
-
-
+//===========================================================
 console.log('----------Part 3-a----------');
+
+const object1 = [{guy: "TheDude", age: 34}];
+
+function modifyOriginalObject(object1) {
+    // Check if 'age' field exists; if not, initialize it to 0
+    // if (!object1.hasOwnProperty('age')) {
+    //     object1.age = 34;
+    // }
+
+    // Update 'age' field
+    object1.age++;
+
+    // Add or update 'updated_at' field with current timestamp
+    const currentDate = new Date ();
+    // function formatDate(date) {
+    //     const year = date.getFullYear();
+    //     const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are zero-based, so we add 1
+    //     const day = String(date.getDate()).padStart(2, '0');
+      
+    //     return `${year}-${month}-${day}`;
+    //   }
+      
+    //   const formattedDate = formatDate(currentDate);
+    //   console.log(formattedDate);
+    
+    //   const futureDate = new Date(currentDate);
+    //   futureDate.setDate(currentDate.getDate() + 400);
+    
+    object1.updated_at = currentDate;
+
+    return object1;
+}
+
+// Example usage:
+const modifiedObject1 = modifyOriginalObject(object1[0]);
+
+console.log(modifiedObject1);
+
+//=======================================================
 console.log('----------Part 3-b----------');
-console.log('----------Part 4----------');
+
+console.log('-----------Part 4-----------');
+
+
 console.log('----------Part 5-a----------');
 console.log('----------Part 5-b----------');
 console.log('----------Part 5-c----------');
