@@ -104,7 +104,7 @@ const averageAge = sumAge / youngerPeople.length;
 
 console.log(`The average age is ${averageAge.toFixed(0)}`);
 //===========================================================
-console.log('----------Part 3-a----------');
+console.log('----------Part 3----------');
 
 const object1 = [{guy: "TheDude", age: 34}];
 
@@ -144,8 +144,6 @@ const modifiedObject1 = modifyOriginalObject(object1[0]);
 console.log(modifiedObject1);
 
 //=======================================================
-console.log('----------Part 3-b----------');
-
 console.log('-----------Part 4-----------');
 
 
