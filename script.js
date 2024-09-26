@@ -78,8 +78,33 @@ console.log(arrObject);
 console.log('----------Part 2-b----------');
 
 
+const youngerPeople = arrObject.filter(person => parseInt(person.age) <= 50);
+
+console.log(youngerPeople);
+
 console.log('----------Part 2-c----------');
+
+const newArrObject = youngerPeople.map(person => ({
+    id: person.id,
+    name: person.name,
+    job: person.occupation,
+    age: String(Number(person.age) +1)
+}));
+
+console.log(youngerPeople);
+
 console.log('----------Part 2-d----------');
+
+const sumAge = youngerPeople.reduce((sum, person) => 
+     sum + parseInt(person.age), 0);
+
+console.log(`Sum of Ages is, ${sumAge}`)
+
+const averageAge = sumAge / youngerPeople.length;
+
+console.log(`The average age is ${averageAge.toFixed(0)}`);
+
+
 console.log('----------Part 3-a----------');
 console.log('----------Part 3-b----------');
 console.log('----------Part 4----------');
